@@ -6,7 +6,7 @@ const deleteLinkHandler = require('./handlers/deleteLinkHandler')
 const createHashHandler =  require('./handlers/createHashHandler')
 const getLinkFromHashHandler = require('./handlers/getLinkFromHashHandler')
 const updateLinkHandler = require('./handlers/updateLinkHandler')
-
+const getLinksHandler = require('./handlers/getLInksHandler')
 
 const server = Hapi.server({
     host: 'localhost',
@@ -18,7 +18,13 @@ server.route([
     method: 'POST',
     path: '/v1/links',
     handler: createHashHandler,
-  } , {
+  } ,
+  {
+    method: 'GET',
+    path: '/v1/links',
+    handler: getLinksHandler,
+  } ,
+  {
     method: 'GET',
     path: '/v1/{hash}',
     handler: getLinkFromHashHandler,
