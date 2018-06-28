@@ -1,0 +1,43 @@
+@import './fonts';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: $color_secondary_background;
+  color: $color_primary_text_light;
+  font-family: 'Rubik', sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: inherit; /* no underline */
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: $font34;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: $font24;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: $font16;
+}
+
+p, span {
+  font-family: 'Cinetype';
+  font-size: $font14;
+}
