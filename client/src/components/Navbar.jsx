@@ -10,14 +10,6 @@ const Navbar = () => (
         <h1>URL shortener</h1>
       </Link>
     </span>
-    <span className={styles.navigation}>
-      <Link className={styles.link} to="/create">
-        create link
-      </Link>
-      <Link className={styles.link} to="/list">
-        links available
-      </Link>
-    </span>
   </nav>
 );
 

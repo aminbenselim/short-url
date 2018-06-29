@@ -1,31 +1,11 @@
 @import '../styles/constants';
 
 .navbar {
-  width: 100%;
-  height: $nav_bar_height;
+  width: 100vw;
 
-
+  background-color: $color_secondary_background;
   display: flex;
   justify-content: space-between;
 
   padding: $margin_xs;
-
-  .navigation {
-    .link {
-      font-size: $font24;
-      margin-left: $margin_sm;
-
-      &:nth-child(1) {
-        border-bottom: 2px solid $color_primary_purple;
-      }
-      &:nth-child(2) {
-        border-bottom: 2px solid $color_primary_green;
-      }
-      &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-      }
-    }
-  }
 }
-
