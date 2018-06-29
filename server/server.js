@@ -11,6 +11,11 @@ const getLinksHandler = require('./handlers/getLInksHandler')
 const server = Hapi.server({
     host: 'localhost',
     port: 8888,
+    routes: {
+      cors: {
+        origin: ['*'],
+      }
+    }
 });
 
 server.route([
