@@ -1,12 +1,20 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
-
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const Link = props => (
-  <React.Fragment>
-    <Redirect to={props.links.url} />
-  </React.Fragment>
-);
+import { getUrlByHash } from '../../links/selectors';
 
-export default connect()(Link);
+class Link extends Component {
+  componentDidMount() {
+    setTimeout(() => (window.location = this.props.url));
+  }
+
+  render() {
+    return null;
+  }
+}
+
+const mapStateToProps = (state, ownProps) => ({
+  url: getUrlByHash(ownProps.match.params.hash)(state),
+});
+
+export default connect(mapStateToProps)(Link);

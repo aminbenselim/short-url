@@ -19,7 +19,7 @@ class App extends React.Component {
         <Navbar />
         <main>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Link" component={Link} />
+          <Route exact path="/:hash" component={Link} />
         </main>
       </div>
     );
