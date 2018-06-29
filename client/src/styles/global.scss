@@ -8,7 +8,7 @@
 
 html,
 body {
-  background: $color_secondary_background;
+  background-color: #f3f3f3;
   color: $color_primary_text_light;
   font-family: 'Rubik', sans-serif;
   font-size: 10px;
@@ -18,22 +18,22 @@ body {
 
 a {
   color: inherit;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cinetype', sans-serif;
   text-decoration: inherit; /* no underline */
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cinetype', sans-serif;
   font-size: $font34;
 }
 
 h2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cinetype', sans-serif;
   font-size: $font24;
 }
 
 h4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cinetype', sans-serif;
   font-size: $font16;
 }
 

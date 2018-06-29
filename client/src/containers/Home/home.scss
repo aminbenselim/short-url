@@ -1,0 +1,13 @@
+@import url('../../styles/constants.scss');
+
+.homeWrapper {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 16px;
+
+  width:80vw;
+  max-width: $website_max_width;
+  border-radius: 8px;
+}
