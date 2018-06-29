@@ -6,12 +6,19 @@ import { makeRequestActionCreators } from '../helpers/actions';
 
 export const fetchLinks = makeRequestActionCreators('FETCH_LINKS');
 
+export const createLink = makeRequestActionCreators('CREATE_LINK');
+export const readLink = makeRequestActionCreators('READ_LINK');
+export const updateLink = makeRequestActionCreators('UPDATE_LINK');
+export const deleteLink = makeRequestActionCreators('DELETE_LINK');
+
 // Reducer
 
 const defaultState = {
   isLoading: false,
   requestFailed: false,
-  links: [],
+  providedUrl: '',
+  providedHash: '',
+  urls: [],
 };
 
 export const linksReducer = (initialState = defaultState, action) =>
@@ -27,7 +34,7 @@ export const linksReducer = (initialState = defaultState, action) =>
         break;
       case fetchLinks.success.actionType:
         draftState.isLoading = false;
-        draftState.links = action.payload;
+        draftState.urls = action.payload;
         break;
     }
   });
